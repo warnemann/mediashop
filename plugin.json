@@ -11,11 +11,11 @@
   "keywords"              : ["theme", "Ceres", "template"],
   "type"                  :"theme",
   "require"               : ["IO", "Ceres"],
-  "serviceProvider"       :"mediashop\\Providers\\ThemeServiceProvider",
+  "serviceProvider"       :"mediashop\\Providers\\mediashopServiceProvider",
   "dataProviders"         :
   [
     {
-      "key":"mediashop\\Containers\\ThemeContainer",
+      "key":"mediashop\\Containers\\mediashopContainer",
       "name":"Dark background",
       "description":"Change the background colour of the Ceres template"
     }
