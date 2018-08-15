@@ -2,7 +2,7 @@
     "name"                  :"mediashop",
     "description"           :"Basic theme plugin",
     "namespace"             :"mediashop",
-    "author"                :"Your name",
+    "author"                :"Heinz W. Warnemann",
     "keywords"              : ["theme", "Ceres", "template"],
     "type"                  :"theme",
     "require"               : [],
