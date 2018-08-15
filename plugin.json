@@ -16,8 +16,8 @@
   [
     {
       "key":"mediashop\\Containers\\ThemeContainer",
-      "name":"Dark background",
-      "description":"Change the background colour of the Ceres template"
+      "name":"Theme mediashop",
+      "description":"Theme-Container für den mediashop"
     }
     ]
     }
