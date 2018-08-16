@@ -8,6 +8,6 @@ class mediashopContainer
 {
     public function call(Twig $twig):string
     {
-        return $twig->render('Theme::content.Theme');
+        return $twig->render('mediashop::content.mediashop');
     }
 }
