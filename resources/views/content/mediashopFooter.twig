@@ -16,20 +16,6 @@
         <i class="fa fa-arrow-up" aria-hidden="true"></i>
     </div>
 
-    {% if numberOfFeatures > 0 %}
-        <div class="footer-features p-y-1 container-max">
-            <div class="row">
-                {% for i in 1..numberOfFeatures %}
-                    <div class="col-xs-12 col-sm-4 text-xs-center">
-                        <i class="fa fa-check text-success" aria-hidden="true"></i>
-                        {{ trans('Ceres::Template.footerStoreFeature' ~ i) }}
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
-    {% endif %}
-
-
     <div class="container-max footer-content">
         <div class="row">
             <div class="col-xs-12">
@@ -123,11 +109,7 @@
                     {% endif %}
                 {% endautoescape %}
             </div>
-            <a rel="nofollow" href="https://www.plentymarkets.eu">
-                <img alt="Plentymarkets GmbH Logo" class="svg plenty-brand" src="{{ plugin_path('Ceres') }}/images/plentymarkets-logo.svg" rel="nofollow" crossorigin="anonymous">
-            </a>
-            <br>
-            <small>&copy; Copyright {{ "now" | date("Y") }} | {{ trans("Ceres::Template.footerAllRightsReserved") }}</small>
+            <small>&copy; 2018 HAWEWE media | Alle Rechte vorbehalten. | Made with ❤ in <a href="http://www.jenbachmedia.de" target="_blank">Bavaria</a>.</small>
         </div>
     </div>
 </div>
