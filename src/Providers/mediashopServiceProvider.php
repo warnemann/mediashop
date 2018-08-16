@@ -26,11 +26,9 @@ public function boot(Twig $twig, Dispatcher $eventDispatcher)
   {
       $eventDispatcher->listen('IO.init.templates', function(Partial $partial)
       {
-         $partial->set('footer', 'mediashop::PageDesign.Partials.Footer');
+         $partial->set('footer', 'mediashop::content.mediashopFooter');
       }, 0);
       return false;
   }
-
-
 
 }
