@@ -11,7 +11,7 @@
   "keywords"              :["theme", "Ceres", "template"],
   "type"                  :"theme",
   "require"               :["IO", "Ceres"],
-  "serviceProvider"       :"mediashop\\Providers\\ThemeServiceProvider",
+  "serviceProvider"       :"mediashop\\Providers\\mediashopServiceProvider",
   "dataProviders"         :
   [
     {
