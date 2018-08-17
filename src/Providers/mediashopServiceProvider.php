@@ -26,9 +26,23 @@ public function boot(Twig $twig, Dispatcher $eventDispatcher)
   {
       $eventDispatcher->listen('IO.init.templates', function(Partial $partial)
       {
-         $partial->set('footer', 'mediashop::content.mediashopFooter');
+         $partial->set('footer', 'mediashop::PageDesign.Partials.mediashopFooter');
       }, 0);
       return false;
   }
 
 }
+
+/*
+
+      $eventDispatcher->listen('IO.init.templates', function(Partial $partial)
+      {
+         $partial->set('footer', 'mediashop::content.mediashopFooter');
+      }, 0);
+
+
+$eventDispatcher->listen('IO.init.templates', function(Partial $partial)
+   {
+     $partial->set('footer', 'ThemeName::PageDesign.Partials.Footer'); // Override Footer
+   }, 0);
+*/
