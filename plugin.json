@@ -10,7 +10,7 @@
   "phone"                 :"+49 8035 9549490",
   "keywords"              :["theme", "Ceres", "template"],
   "type"                  :"theme",
-  "require"               :["IO", "Ceres"],
+  "require"               :[],
   "serviceProvider"       :"mediashop\\Providers\\mediashopServiceProvider",
   "dataProviders"         :
   [
@@ -18,6 +18,6 @@
       "key":"mediashop\\Containers\\mediashopContainer",
       "name":"Theme mediashop",
       "description":"Theme-Container für den mediashop"
-    }
-    ]
-    }
+            }
+        ]
+}
