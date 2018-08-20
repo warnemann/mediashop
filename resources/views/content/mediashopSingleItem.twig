@@ -165,20 +165,6 @@
                                         </tr>
                                     {% endif %}
 
-                                    {% if 'item.condition' in itemData or 'all' in itemData %}
-                                        <tr v-if="currentVariation.item.condition && currentVariation.item.condition.names.name !== ''">
-                                            <td>{{ trans("Ceres::Template.singleItemCondition") }}</td>
-                                            <td>${ currentVariation.item.condition.names.name }</td>
-                                        </tr>
-                                    {% endif %}
-
-                                    {% if 'item.age_rating' in itemData or 'all' in itemData %}
-                                        <tr>
-                                            <td>{{ trans("Ceres::Template.singleItemAge") }}</td>
-                                            <td>{{ trans("Ceres::Template.singleItemFSK", {"age": item.documents[0].data.item.ageRestriction }) }}</td>
-                                        </tr>
-                                    {% endif %}
-
                                     {% if ('item.external_id' in itemData or 'all' in itemData) %}
                                         <tr v-if="currentVariation.variation.externalId !== ''">
                                             <td>{{ trans("Ceres::Template.singleItemExternalVariationId") }}</td>
