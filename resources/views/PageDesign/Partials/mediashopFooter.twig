@@ -102,6 +102,7 @@
 
         {% set cat = services.category.get(config('Ceres.global.category.legal_disclosure')) %}
         <div class="copyright text-xs-center m-y-1">
+            
             <div class="static-link-list">
                 {% autoescape false %}
                     <a href="{{ urls.cancellationRights }}">{{ trans("Ceres::Template.footerCancellationRight", {"hyphen": "&shy;"}) }}</a>
@@ -118,7 +119,11 @@
                     {% endif %}
                 {% endautoescape %}
             </div>
-            <small>&copy; 2018 HAWEWE media | Alle Rechte vorbehalten. | Made with ❤ in Bavaria</small>
+            <a rel="nofollow" href="https://www.plentymarkets.eu">
+                <img alt="Plentymarkets GmbH Logo" class="svg plenty-brand" src="{{ plugin_path('Ceres') }}/images/plentymarkets-logo.svg" rel="nofollow" crossorigin="anonymous">
+            </a>
+            <br>
+            <small>&copy; 2018 HAWEWE media | Alle Rechte vorbehalten. | Made with ❤ in <a href="https://www.jenbachmedia.de" target="_blank">Bavaria</small>
         </div>
     </div>
 </div>
