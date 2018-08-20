@@ -46,12 +46,7 @@ public function boot(Twig $twig, Dispatcher $eventDispatcher)
                 }
             }, self::PRIORITY);
         
-
-    
-    
-    
-    
-    return false;
+/*    return false; */
   }
 
     
