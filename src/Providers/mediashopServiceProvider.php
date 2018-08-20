@@ -27,30 +27,13 @@ public function boot(Twig $twig, Dispatcher $eventDispatcher)
       $eventDispatcher->listen('IO.init.templates', function(Partial $partial)
       {
          $partial->set('footer', 'mediashop::PageDesign.Partials.mediashopFooter');
-         $partial->set('head', 'mediashop::PageDesign.Partials.Header.mediashopHead');
+/*         $partial->set('head', 'mediashop::PageDesign.Partials.Header.mediashopHead'); */
 
       }, 0);
       return false;
   }
 
-    
-$eventDispatcher->listen('IO.Component.Import', function (ComponentContainer $container)
- 	 {
-  if ($container->getOriginComponentTemplate()=='mediashop::Item.Components.SingleItem')
- 			 {
-  $container->setNewComponentTemplate('mediashop::Item.SingleItem');
- 			 }
- }, self::PRIORITY);
-    
-    
 }
-
-
-
-
-
-
-
 
 
 /*
