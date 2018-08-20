@@ -3,6 +3,8 @@
 namespace mediashop\Providers;
 
 use IO\Extensions\Functions\Partial;
+use IO\Helper\ComponentContainer;
+use IO\Helper\TemplateContainer;
 use Plenty\Plugin\Events\Dispatcher;
 use Plenty\Plugin\ServiceProvider;
 use Plenty\Plugin\Templates\Twig;
@@ -10,6 +12,8 @@ use Plenty\Plugin\Templates\Twig;
 
 class mediashopServiceProvider extends ServiceProvider
 {
+
+      const PRIORITY = 0;
 
   /**
    * Register the service provider.
@@ -50,4 +54,21 @@ $eventDispatcher->listen('IO.init.templates', function(Partial $partial)
    }, 0);
 */
 
+
+     
+     
+    /**
+    	 * Boot a template for the basket that will be displayed in the template plugin instead of the original basket.
+    	 */
+    	public function boot(Twig $twig, Dispatcher $eventDispatcher)
+        {
+            $eventDispatcher->listen('IO.Component.Import', function (ComponentContainer $container)
+            {
+                if ($container->getOriginComponentTemplate()=='mediashop::Item.Components.SingleItem')
+                {
+                    $container->setNewComponentTemplate('mediashop::content.SingleItem');
+                }
+            }, self::PRIORITY);
+        }
+    }
 
