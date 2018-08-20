@@ -33,7 +33,25 @@ public function boot(Twig $twig, Dispatcher $eventDispatcher)
       return false;
   }
 
+    
+$eventDispatcher->listen('IO.Component.Import', function (ComponentContainer $container)
+ 	 {
+  if ($container->getOriginComponentTemplate()=='Ceres::Item.Components.SingleItem')
+ 			 {
+  $container->setNewComponentTemplate('mediashop::Item.SingleItem');
+ 			 }
+ }, self::PRIORITY);
+    
+    
 }
+
+
+
+
+
+
+
+
 
 /*
 
@@ -48,3 +66,5 @@ $eventDispatcher->listen('IO.init.templates', function(Partial $partial)
      $partial->set('footer', 'ThemeName::PageDesign.Partials.Footer'); // Override Footer
    }, 0);
 */
+
+
