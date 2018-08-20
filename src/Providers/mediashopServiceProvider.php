@@ -36,7 +36,7 @@ public function boot(Twig $twig, Dispatcher $eventDispatcher)
     
 $eventDispatcher->listen('IO.Component.Import', function (ComponentContainer $container)
  	 {
-  if ($container->getOriginComponentTemplate()=='Ceres::Item.Components.SingleItem')
+  if ($container->getOriginComponentTemplate()=='mediashop::Item.Components.SingleItem')
  			 {
   $container->setNewComponentTemplate('mediashop::Item.SingleItem');
  			 }
