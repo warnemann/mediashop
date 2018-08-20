@@ -34,16 +34,10 @@ public function boot(Twig $twig, Dispatcher $eventDispatcher)
 /*         $partial->set('head', 'mediashop::PageDesign.Partials.Header.mediashopHead'); */
 
       }, 0);
-      return false;
-  }
 
-    
-    
-      /**
+          /**
     	 * Boot a template for the basket that will be displayed in the template plugin instead of the original basket.
     	 */
-    	public function boot(Twig $twig, Dispatcher $eventDispatcher)
-        {
             $eventDispatcher->listen('IO.Component.Import', function (ComponentContainer $container)
             {
                 if ($container->getOriginComponentTemplate()=='mediashop::Item.Components.SingleItem')
@@ -51,7 +45,17 @@ public function boot(Twig $twig, Dispatcher $eventDispatcher)
                     $container->setNewComponentTemplate('mediashop::content.SingleItem');
                 }
             }, self::PRIORITY);
-        }
+        
+
+    
+    
+    
+    
+    return false;
+  }
+
+    
+    
   
     
     
