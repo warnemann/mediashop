@@ -131,11 +131,11 @@
                                 <a :class="{ 'active': !isDescriptionTabActive && isTechnicalDataTabActive }" class="nav-link" data-toggle="tab" :href="'#data-' + currentVariation.variation.id" role="tab">{{ trans("Ceres::Template.singleItemTechnicalData") }}</a>
                             </li>
                         {% endif %}
-
-<!-- <li class="nav-item"> -->
-<!-- <a :class="{ 'active': !isDescriptionTabActive && !isTechnicalDataTabActive }" class="nav-link" data-toggle="tab" href="#assessments-details" role="tab">{{ trans("Ceres::Template.singleItemMoreDetails") }}</a> -->
-<!-- </li> -->
-
+                        
+                        <li class="nav-item">
+                        <a :class="{ 'active': !isDescriptionTabActive && !isTechnicalDataTabActive }" class="nav-link" data-toggle="tab" href="#assessments-details" role="tab">{{ trans("Ceres::Template.singleItemMoreDetails") }}</a>
+                        </li>
+                        
                         <slot name="AddDetailTabs"></slot>
                     </ul>
 
