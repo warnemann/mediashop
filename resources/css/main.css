@@ -7,6 +7,15 @@ body {
     font-size: 100%;
 }
 
+
+.m-t-1 {
+    margin-top: 0px;
+}
+
+.single .single-description {
+    font-size: 1.20rem;
+}
+
 /* font-family: 'Playfair Display', sans-serif; */
 /* font-family: 'Open Sans', sans-serif; */
 /* font-family: 'Raleway', sans-serif; */
