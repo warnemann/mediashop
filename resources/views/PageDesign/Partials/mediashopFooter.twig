@@ -110,7 +110,7 @@
                     {% else %}
                         <a href="{{ urls.cancellationForm }}">{{ trans("Ceres::Template.footerCancellationForm", {"hyphen": "&shy;"}) }}</a>
                     {% endif %}
-                    <a href="{{ urls.legalDisclosure }}">{{ trans("Ceres::Template.footerLegalDisclosure") }}</a>
+                    <a href="/impressum">Impressum</a>
                     <a href="{{ urls.privacyPolicy }}">{{ trans("Ceres::Template.footerPrivacyPolicy", {"hyphen": "&shy;"}) }}</a>
                     <a href="{{ urls.gtc }}">{{ trans("Ceres::Template.footerGtc") }}</a>
                     {% if config("Ceres.contact.shop_mail") | length > 0 and config("Ceres.contact.shop_mail") != "your@email.com" %}
