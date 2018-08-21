@@ -20,7 +20,10 @@
         {"@context": "http://schema.org","@type": "WebSite","url": "{{ services.webstoreConfig.getWebstoreConfig().domainSsl }}","potentialAction":{"@type": "SearchAction","target": "{{ services.webstoreConfig.getWebstoreConfig().domainSsl }}/search?query={search_term}","query-input": "required name=search_term"}}
     </script>
 
-    <title>{{ companyName }}</title>
+<!-- <title>{{ companyName }}</title> -->
+
+<title>TEST</title>
+
 {% endblock %}
 
 {% block PageBody %}
@@ -30,7 +33,6 @@
         <div class="home container-max">
             <div class="row">
                 <div class="col">
-                    TEST
                     {% for content in container("Ceres::Homepage") if content.plugin == "Plenty" %}
                         {{ content.result|raw }}
                     {% endfor %}
