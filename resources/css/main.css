@@ -35,6 +35,10 @@ body {
     font-size: 1rem;
 }
 
+.static-link-list a {
+    margin-right: 0px;
+}
+
 /* font-family: 'Playfair Display', sans-serif; */
 /* font-family: 'Open Sans', sans-serif; */
 /* font-family: 'Raleway', sans-serif; */
