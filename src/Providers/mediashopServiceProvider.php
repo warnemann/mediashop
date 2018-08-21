@@ -31,7 +31,8 @@ public function boot(Twig $twig, Dispatcher $eventDispatcher)
       $eventDispatcher->listen('IO.init.templates', function(Partial $partial)
       {
          $partial->set('footer', 'mediashop::PageDesign.Partials.mediashopFooter');
-         $partial->set('head', 'mediashop::PageDesign.Partials.Header.mediashopHead');
+          $partial->set('homepage', 'mediashop::content.Homepage.Homepage.twig');
+          $partial->set('head', 'mediashop::PageDesign.Partials.Header.mediashopHead');
 
       }, 0);
 
