@@ -9,7 +9,6 @@ use Plenty\Plugin\Events\Dispatcher;
 use Plenty\Plugin\ServiceProvider;
 use Plenty\Plugin\Templates\Twig;
 
-
 class mediashopServiceProvider extends ServiceProvider
 {
 
@@ -28,10 +27,18 @@ class mediashopServiceProvider extends ServiceProvider
  */
 public function boot(Twig $twig, Dispatcher $eventDispatcher)
   {
-      $eventDispatcher->listen('IO.init.templates', function(Partial $partial)
+    
+	$eventDispatcher->listen('IO.tpl.home', function(TemplateContainer $templateContainer)
+			{
+					$templateContainer->setTemplate('mediashop::Homepage.mediashopHomepage');
+			}, 0);
+
+    
+    
+    $eventDispatcher->listen('IO.init.templates', function(Partial $partial)
       {
          $partial->set('footer', 'mediashop::PageDesign.Partials.mediashopFooter');
-          $partial->set('homepage', 'mediashop::Homepage.mediashopHomepage.twig');
+/*          $partial->set('homepage', 'mediashop::Homepage.mediashopHomepage.twig'); */
           $partial->set('head', 'mediashop::PageDesign.Partials.Header.mediashopHead');
 
       }, 0);
@@ -51,22 +58,7 @@ public function boot(Twig $twig, Dispatcher $eventDispatcher)
   }
 
     
-    
-  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-}
-
+ 
 
 /*
 
