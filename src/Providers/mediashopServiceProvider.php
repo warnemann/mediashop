@@ -36,7 +36,7 @@ public function boot(Twig $twig, Dispatcher $eventDispatcher)
     
     $eventDispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
          $templateContainer->setTemplates([
-             ResultFieldTemplate::TEMPLATE_SINGLE_ITEM   => 'mediashop::ResultFields.SingleItem'
+             ResultFieldTemplate::TEMPLATE_SINGLE_ITEM   => 'mediashop::ResultFields.SingleItem.fields'
          ]);
      }, 0);
 
