@@ -33,8 +33,6 @@
     "variation.mayShowUnitPrice",
     "variation.bundleType",
 
-    "barcodes.*",
-    
     "texts.*",
 
     "bundleComponents.*",

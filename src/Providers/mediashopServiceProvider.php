@@ -8,6 +8,7 @@ use IO\Helper\TemplateContainer;
 use Plenty\Plugin\Events\Dispatcher;
 use Plenty\Plugin\ServiceProvider;
 use Plenty\Plugin\Templates\Twig;
+use IO\Services\ItemSearch\Helper\ResultFieldTemplate;
 
 class mediashopServiceProvider extends ServiceProvider
 {
@@ -39,9 +40,6 @@ public function boot(Twig $twig, Dispatcher $eventDispatcher)
          ]);
      }, 0);
 
-    
-    
-    
     
     $eventDispatcher->listen('IO.init.templates', function(Partial $partial)
       {
