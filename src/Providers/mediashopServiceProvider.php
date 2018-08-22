@@ -8,7 +8,7 @@ use IO\Helper\TemplateContainer;
 use Plenty\Plugin\Events\Dispatcher;
 use Plenty\Plugin\ServiceProvider;
 use Plenty\Plugin\Templates\Twig;
-use IO\Services\ItemSearch\Helper\ResultFieldTemplate;
+/* use IO\Services\ItemSearch\Helper\ResultFieldTemplate; */
 
 class mediashopServiceProvider extends ServiceProvider
     {
@@ -33,12 +33,12 @@ class mediashopServiceProvider extends ServiceProvider
                                      $templateContainer->setTemplate('mediashop::Homepage.mediashopHomepage');
                                      }, 0);
         
-        $eventDispatcher->listen('IO.ResultFields.*', function(ResultFieldTemplate $templateContainer)
+/*        $eventDispatcher->listen('IO.ResultFields.*', function(ResultFieldTemplate $templateContainer)
                                  {
                                      $templateContainer->setTemplates([ResultFieldTemplate::TEMPLATE_SINGLE_ITEM =>'mediashop::ResultFields.SingleItem'
                                                                        ]);
                                      }, 0);
-        
+*/        
         $eventDispatcher->listen('IO.init.templates', function(Partial $partial)
                                  {
                                      $partial->set('footer', 'mediashop::PageDesign.Partials.mediashopFooter');
