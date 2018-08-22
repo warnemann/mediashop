@@ -49,7 +49,9 @@ public function boot(Twig $twig, Dispatcher $eventDispatcher)
             {
                 if ($container->getOriginComponentTemplate()=='Ceres::Item.Components.SingleItem')
                 {
-                    $container->setNewComponentTemplate('mediashop::content.mediashopSingleItem');
+  $container->setNewComponentTemplate('mediashop::Item.Components.SingleItem');
+
+                    /*                    $container->setNewComponentTemplate('mediashop::content.mediashopSingleItem'); */
                 }
             }, self::PRIORITY);
         
