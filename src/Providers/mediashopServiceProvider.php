@@ -35,7 +35,7 @@ class mediashopServiceProvider extends ServiceProvider
         
         $eventDispatcher->listen('IO.ResultFields.*', function(ResultFieldTemplate $templateContainer)
                                  {
-                                     $templateContainer->setTemplates([ResultFieldTemplate::TEMPLATE_SINGLE_ITEM=>'mediashop::ResultFields.SingleItem'
+                                     $templateContainer->setTemplates([ResultFieldTemplate::TEMPLATE_SINGLE_ITEM =>'mediashop::ResultFields.SingleItem'
                                                                        ]);
                                      }, 0);
         
