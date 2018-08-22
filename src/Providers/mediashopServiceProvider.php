@@ -57,7 +57,7 @@ public function boot(Twig $twig, Dispatcher $eventDispatcher)
 /*    return false; */
   }
 
-    
+}
  
 
 /*
