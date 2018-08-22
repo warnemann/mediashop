@@ -20,10 +20,7 @@
         {"@context": "http://schema.org","@type": "WebSite","url": "{{ services.webstoreConfig.getWebstoreConfig().domainSsl }}","potentialAction":{"@type": "SearchAction","target": "{{ services.webstoreConfig.getWebstoreConfig().domainSsl }}/search?query={search_term}","query-input": "required name=search_term"}}
     </script>
 
-<!-- <title>{{ companyName }}</title> -->
-
-<title>TEST</title>
-
+    <title>{{ companyName }}</title>
 {% endblock %}
 
 {% block PageBody %}
@@ -46,7 +43,7 @@
             {% include 'Ceres::Homepage.MarketingHomepage.twig' %}
         {% else %}
             {% block ThemeHomepage %}
-                {% include 'Ceres::Homepage.DefaultHomepage.twig' %}
+                {% include 'mediashop::Homepage.DefaultHomepage.twig' %}
             {% endblock %}
         {% endif %}
 
