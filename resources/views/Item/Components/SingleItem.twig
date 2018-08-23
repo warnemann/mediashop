@@ -66,9 +66,8 @@
                     {% endif %}
 
                     <span class="price h2">
-                        <span ref="variationTotalPrice" :content="currentVariation.prices.default.price.formatted">
-                            ${ variationTotalPrice | currency(currentVariation.prices.default.currency) }
-                        </span>
+${ itemData.prices.default.unitPrice.formatted }
+    </span>
                         <sup>*</sup>
                         <span :content="currentVariation.prices.default.currency"></span>
     </span>
