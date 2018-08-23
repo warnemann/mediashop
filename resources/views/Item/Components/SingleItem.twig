@@ -66,12 +66,14 @@
                     {% endif %}
 
                     <span class="price h1">
-                        <span ref="variationTotalPrice" :content="currentVariation.prices.default.price.value">
+                        <span ref="variationTotalPrice" :content="currentVariation.prices.default.price.formatted">
                             ${ variationTotalPrice | currency(currentVariation.prices.default.currency) }
                         </span>
                         <sup>*</sup>
                         <span :content="currentVariation.prices.default.currency"></span>
-                    </span>
+${ itemData.prices.default.unitPrice.formatted } +++
+    </span>
+                    
 
                     <div class="base-price text-muted m-y-1" v-if="currentVariation.unit">
                         <div>
