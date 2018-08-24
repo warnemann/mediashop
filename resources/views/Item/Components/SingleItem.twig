@@ -207,13 +207,6 @@
                                         </tr>
                                     {% endif %}
 
-                                    {% if 'item.manufacturer' in itemData or 'all' in itemData %}
-                                        <tr v-if="currentVariation.filter.hasManufacturer && currentVariation.item.manufacturer.externalName !== ''">
-                                            <td>{{ trans("Ceres::Template.singleItemManufacturer") }}</td>
-                                            <td>${ currentVariation.item.manufacturer.externalName }</td>
-                                        </tr>
-                                    {% endif %}
-
                                     {% if 'item.producerCountry' in itemData or 'all' in itemData %}
                                         <tr v-if="currentVariation.item.producingCountry && currentVariation.item.producingCountry.names.name !== ''">
                                             <td>{{ trans("Ceres::Template.singleItemManufacturingCountry") }}</td>
