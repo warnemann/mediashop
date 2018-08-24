@@ -1,6 +1,14 @@
 /* Change background colour */
 body {
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+.wrapper-main .top-bar {
+    background: #efefef;
+    position: relative;
+    margin-bottom: 15px;
 }
 
 .tag {
