@@ -11,6 +11,22 @@ body {
     margin-bottom: 15px;
 }
 
+.wrapper-main .top-bar .brand-wrapper {
+    position: relative;
+    -webkit-transform: none;
+    transform: none;
+    text-align: center;
+}
+
+
+.wrapper-main .top-bar .brand-wrapper .navbar-brand {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    padding: 20px 0;
+}
+
+
 .tag {
     font-size: 100%;
 }
