@@ -32,11 +32,20 @@
                         <span class="articlenumber small text-muted">
                             <b>{{ trans("Ceres::Template.singleItemNumber") }}:</b>
                             <span>${ currentVariation.variation.number }</span>
-                            <span>${ currentVariation.variation.releasedAt }</span>
+                            </span>
+    
+                </div>
+                    <div class="m-b-3">
+                        <span class="articlenumber small text-muted">
+                        <b>Erscheinungsdatum:</b>
+                        <span>${ currentVariation.variation.releasedAt.toLocaleDateString() }</span>
+                        </span>
+                         </div> 
 
-    </span>
-                    </div>
-                    
+
+
+
+
                     <!-- Variation -->
                     <div class="row m-b-1" v-if="variations.length > 0">
                         <variation-select template="#vue-variation-select" :attributes="attributeNameMap" :variations="variations" :preselect="currentVariation.variation.id" @is-valid-change="isVariationSelected = $event"></variation-select>
