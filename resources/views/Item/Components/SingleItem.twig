@@ -32,9 +32,11 @@
                         <span class="articlenumber small text-muted">
                             <b>{{ trans("Ceres::Template.singleItemNumber") }}:</b>
                             <span>${ currentVariation.variation.number }</span>
-                            </span>
-                    </div>
+                            <span>${ currentVariation.variation.releasedAt }</span>
 
+    </span>
+                    </div>
+                    
                     <!-- Variation -->
                     <div class="row m-b-1" v-if="variations.length > 0">
                         <variation-select template="#vue-variation-select" :attributes="attributeNameMap" :variations="variations" :preselect="currentVariation.variation.id" @is-valid-change="isVariationSelected = $event"></variation-select>
@@ -76,7 +78,7 @@
                     <div class="base-price text-muted m-y-1" v-if="currentVariation.unit">
                         <div>
                             {{ trans("Ceres::Template.singleItemContent") }}
-                            <span>${ currentVariation.unit.content | numberFormat }</span>
+                            <span>${ currentVariation.unit.content | numberFormat }:</span>
                             <span>${ currentVariation.unit.names.name }</span>
                         </div>
                         <div v-if="currentVariation.variation.mayShowUnitPrice">
