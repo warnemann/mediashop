@@ -33,11 +33,7 @@
                             <b>{{ trans("Ceres::Template.singleItemNumber") }}:</b>
                             <span>${ currentVariation.variation.number }</span>
                             </span>
-                        <span class="articlenumber small text-muted">
-                        <b>Erscheinungsdatum:</b>
-                        <span>${ currentVariation.variation.releasedAt | date("d.m.Y") }</span>
-                        </span>
-
+                        
                 </div>
 
 
@@ -82,8 +78,8 @@
 
                     <div class="base-price text-muted m-y-1" v-if="currentVariation.unit">
                         <div>
-                            {{ trans("Ceres::Template.singleItemContent") }}
-                            <span>${ currentVariation.unit.content | numberFormat }:</span>
+                            {{ trans("Ceres::Template.singleItemContent") }}:
+                            <span>${ currentVariation.unit.content | numberFormat }</span>
                             <span>${ currentVariation.unit.names.name }</span>
                         </div>
                         <div v-if="currentVariation.variation.mayShowUnitPrice">
