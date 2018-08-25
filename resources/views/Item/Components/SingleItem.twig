@@ -33,16 +33,12 @@
                             <b>{{ trans("Ceres::Template.singleItemNumber") }}:</b>
                             <span>${ currentVariation.variation.number }</span>
                             </span>
-    
-                </div>
-                    <div class="m-b-3">
                         <span class="articlenumber small text-muted">
                         <b>Erscheinungsdatum:</b>
-                        <span>${ currentVariation.variation.releasedAt }</span>
+                        <span>${ currentVariation.variation.releasedAt | date("d.m.Y") }</span>
                         </span>
-                         </div> 
 
-
+                </div>
 
 
 
