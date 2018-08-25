@@ -43,9 +43,7 @@ class mediashopServiceProvider extends ServiceProvider
                                  {
                                      $partial->set('footer', 'mediashop::PageDesign.Partials.mediashopFooter');
                                      $partial->set('head', 'mediashop::PageDesign.Partials.Header.mediashopHead');
-                                     $partial->set('navigation', 'mediashop::PageDesign.Partials.Header.Navigation');
-
-                                 }, 0);
+                                     }, 0);
         
         /**
         * Boot a template for the basket that will be displayed in the template plugin instead of the original basket.
