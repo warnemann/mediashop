@@ -60,6 +60,15 @@ small, .small, .btn-labeled, .basket-preview .totals {
     height: 500px;
 }
 
+.cmp-product-thumb .price {
+    color: #30b3ad;
+    line-height: 1.1;
+    font-weight: 700;
+    font-size: 1.6rem;
+    min-height: 21px;
+}
+
+
 /* font-family: 'Playfair Display', sans-serif; */
 /* font-family: 'Open Sans', sans-serif; */
 /* font-family: 'Raleway', sans-serif; */
