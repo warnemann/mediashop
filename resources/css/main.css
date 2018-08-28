@@ -61,11 +61,11 @@ small, .small, .btn-labeled, .basket-preview .totals {
 }
 
 .cmp-product-thumb .price {
-    color: #30b3ad;
-    line-height: 1.1;
+    color: #000000;
+    line-height: 1.2;
     font-weight: 700;
-    font-size: 1.6rem;
-    min-height: 21px;
+    font-size: 1.8rem;
+    min-height: 24px;
 }
 
 
