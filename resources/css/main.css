@@ -34,6 +34,9 @@ small, .small, .btn-labeled, .basket-preview .totals {
     margin-bottom: 1.0rem;
 }
 
+.thumb-title {
+    color: #000000 !important;
+}
 .m-t-1 {
     margin-top: 0px;
 }
