@@ -1,7 +1,7 @@
 /* Change background colour */
 body {
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
-    background-color: #fff;
+    background-color: #f7f7f9;
     color: #000;
 }
 
@@ -34,10 +34,11 @@ small, .small, .btn-labeled, .basket-preview .totals {
     margin-bottom: 1.0rem;
 }
 
-.thumb-title {
+.cmp-product-thumb .thumb-title {
     color: #000000 !important;
     font-weight: 700;
 }
+
 .m-t-1 {
     margin-top: 0px;
 }
