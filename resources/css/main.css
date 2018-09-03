@@ -1,69 +1,56 @@
-/* Change background colour */
 body {
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     background-color: #f7f7f9;
     color: #000;
-}
-
-/* .wrapper-main .top-bar {
-    background: #efefef;
-    position: relative;
-    margin-bottom: 15px;
-}*/
+    }
 
 .tag {
     font-size: 100%;
-}
+    }
 
 .text-muted {
     color: #000 !important;
-}
+    }
 
 small, .small, .btn-labeled, .basket-preview .totals {
     font-size: 100%;
     font-weight: normal;
-}
+    }
 
 .col-xs-12 h1 {
     font-size: 2.6rem;
     margin-bottom: 1.0rem;
-}
+    }
 
 .col-xs-12 h2 {
     font-size: 2.0rem;
     margin-bottom: 1.0rem;
-}
+    }
 
 .cmp-product-thumb .thumb-title {
     color: #000000 !important;
     font-weight: 700;
-}
+    }
 
 .m-t-1 {
     margin-top: 0px;
-}
+    }
 
 .single .single-description {
     font-size: 1.20rem;
-}
-
-/* .navbar-brand img {
-    max-height: 6rem;
-} */
-
+    }
 
 .top-bar .controls-list > li {
-    font-size: 1rem;
-}
+    font-size: 1.0rem;
+    }
 
 .static-link-list a {
     margin-right: 0px;
-}
-
+    }
 
 .owl-carousel .owl-stage-outer {
     height: 500px;
-}
+    }
 
 .cmp-product-thumb .price {
     color: #000000;
@@ -71,8 +58,7 @@ small, .small, .btn-labeled, .basket-preview .totals {
     font-weight: 700;
     font-size: 1.8rem;
     min-height: 24px;
-}
-
+    }
 
 /* font-family: 'Playfair Display', sans-serif; */
 /* font-family: 'Open Sans', sans-serif; */
