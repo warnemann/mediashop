@@ -48,6 +48,10 @@ small, .small, .btn-labeled, .basket-preview .totals {
     margin-right: 0px;
     }
 
+.static-link-list {
+    margin-bottom: 15px;
+}
+
 /* .owl-carousel .owl-stage-outer {
     height: 500px;
     } */
