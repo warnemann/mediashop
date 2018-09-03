@@ -48,9 +48,9 @@ small, .small, .btn-labeled, .basket-preview .totals {
     margin-right: 0px;
     }
 
-.owl-carousel .owl-stage-outer {
+/* .owl-carousel .owl-stage-outer {
     height: 500px;
-    }
+    } */
 
 .cmp-product-thumb .price {
     color: #000000;
