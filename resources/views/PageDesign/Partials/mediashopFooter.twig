@@ -110,11 +110,27 @@
         {% set cat = services.category.get(config('Ceres.global.category.legal_disclosure')) %}
         <div class="copyright text-xs-center m-y-1">
             <div class="static-link-list">
-                                <a href="/impressum">Impressum</a> | <a href="/zahlung-und-versand">Zahlung und Versand</a> | <a href="/versandkosten">Versandkosten</a> | <a href="/widerrufsrecht">Widerrufsrecht</a> | <a href="/datenschutz">Datenschutzerklärung</a> | <a href="/agb">AGB</a><br><br>
-            &copy; 2018 HAWEWE media | Alle Rechte vorbehalten. | Made with ❤ in <a href="http://www.jenbachmedia.de" target="_blank">Bavaria</a>.
-                
-                </div>
+                {% autoescape false %}
+                    <a href="{{ urls.cancellationRights }}">{{ trans("Ceres::Template.footerCancellationRight", {"hyphen": "&shy;"}) }}</a>
+                    {% if config("Ceres.footer.cancellation_use_pdf") == "true" %}
+                        <a href="{{ config('Ceres.footer.cancellation_pdf_path') }}" target="_blank">{{ trans("Ceres::Template.footerCancellationForm", {"hyphen": "&shy;"}) }}</a>
+                    {% else %}
+                        <a href="{{ urls.cancellationForm }}">{{ trans("Ceres::Template.footerCancellationForm", {"hyphen": "&shy;"}) }}</a>
+                    {% endif %}
+                    <a href="{{ urls.legalDisclosure }}">{{ trans("Ceres::Template.footerLegalDisclosure") }}</a>
+                    <a href="{{ urls.privacyPolicy }}">{{ trans("Ceres::Template.footerPrivacyPolicy", {"hyphen": "&shy;"}) }}</a>
+                    <a href="{{ urls.gtc }}">{{ trans("Ceres::Template.footerGtc") }}</a>
+                    {% if config("Ceres.contact.shop_mail") | length > 0 and config("Ceres.contact.shop_mail") != "your@email.com" %}
+                        <a href="{{ urls.contact }}">{{ trans("Ceres::Template.footerContact") }}</a>
+                    {% endif %}
+                {% endautoescape %}
             </div>
+            <a rel="nofollow" href="https://www.plentymarkets.eu">
+                <img alt="Plentymarkets GmbH Logo" class="svg plenty-brand" src="{{ plugin_path('Ceres') }}/images/plentymarkets-logo.svg" rel="nofollow" crossorigin="anonymous">
+            </a>
+            <br>
+            <small>&copy; Copyright {{ "now" | date("Y") }} | {{ trans("Ceres::Template.footerAllRightsReserved") }}</small>
+        </div>
     </div>
 </div>
 {% else %}
