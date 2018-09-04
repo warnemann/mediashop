@@ -17,6 +17,10 @@ small, .small, .btn-labeled, .basket-preview .totals {
     font-weight: normal;
     }
 
+.homepage-title > h1 {
+    border-bottom: none;
+    }
+
 .col-xs-12 h1 {
     font-size: 2.6rem;
     margin-bottom: 1.0rem;
