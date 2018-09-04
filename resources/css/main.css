@@ -17,6 +17,10 @@ small, .small, .btn-labeled, .basket-preview .totals {
     font-weight: normal;
     }
 
+#mainNavbarCollapsable {
+    font-size: 1.2em !important;
+}
+
 .homepage-title > h1 {
     border-bottom: none;
     }
