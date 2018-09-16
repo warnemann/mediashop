@@ -13,7 +13,7 @@ p-t-1, .page-content {
 }
 
 .p-t-2 {
-    padding-top: 1.8rem !important;
+    padding-top: 2.0rem !important;
 }
 
 .m-b-3 {
@@ -65,10 +65,9 @@ small, .small, .btn-labeled, .basket-preview .totals {
     font-size: 1.20rem;
     }
 
-/* .top-bar .controls-list > li {
+.top-bar .controls-list > li {
     font-size: 1.0rem;
     }
-*/
 
 .static-link-list a {
     margin-right: 0px;
