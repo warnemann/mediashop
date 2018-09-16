@@ -56,5 +56,27 @@ class mediashopServiceProvider extends ServiceProvider
                                          $container->setNewComponentTemplate('mediashop::Item.Components.SingleItem');
                                          }
                                      }, self::PRIORITY);
-        }
+
+    
+    $dispatcher->listen('IO.Component.Import', function(ComponentContainer $container){
+     if( $container->getOriginComponentTemplate() == 'Ceres::Checkout.Components.AcceptGtcCheck')
+     {
+        $container->setNewComponentTemplate('mediashop::Checkout.Components.AcceptGtcCheck');
+     }
+   }, 0);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    }
     }
