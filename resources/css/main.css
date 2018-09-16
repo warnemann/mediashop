@@ -5,7 +5,11 @@ body {
     }
 
 .wrapper-main #page-body {
-  margin-top: 20px;
+  margin-top: 1rem;
+}
+
+.p-t-2 {
+    padding-top: 1.8rem !important;
 }
 
 .tag {
