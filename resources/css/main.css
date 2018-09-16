@@ -4,6 +4,10 @@ body {
     color: #000;
     }
 
+.wrapper-main #page-body {
+  margin-top: 118px;
+}
+
 .tag {
     font-size: 100%;
     }
