@@ -17,9 +17,10 @@ small, .small, .btn-labeled, .basket-preview .totals {
     font-weight: normal;
     }
 
-#mainNavbarCollapsable {
+/* #mainNavbarCollapsable {
     font-size: 1.2em !important;
 }
+*/
 
 .homepage-title > h1 {
     border-bottom: none;
@@ -48,9 +49,10 @@ small, .small, .btn-labeled, .basket-preview .totals {
     font-size: 1.20rem;
     }
 
-.top-bar .controls-list > li {
+/* .top-bar .controls-list > li {
     font-size: 1.0rem;
     }
+*/
 
 .static-link-list a {
     margin-right: 0px;
