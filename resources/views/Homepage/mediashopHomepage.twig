@@ -25,29 +25,16 @@
 
 {% block PageBody %}
 
-    {% if ceresConfig.homepage.showShopBuilderContent or request.get('isContentBuilder') == 1 %}
+<div class="home container-max">
 
-        <div class="home container-max">
             <div class="row">
-                <div class="col">
-                    {% for content in container("Ceres::Homepage") if content.plugin == "Plenty" %}
-                        {{ content.result|raw }}
-                    {% endfor %}
-                </div>
+            <div class="homepage-title m-b-1">
+                <h1>Neuerscheinungen | Herbst 2018</h1>
             </div>
         </div>
-
-    {% else %}
-        
-        {% if showDefaultHomepage == "true" %}
-            {% include 'Ceres::Homepage.MarketingHomepage.twig' %}
-        {% else %}
-            {% block ThemeHomepage %}
-                {% include 'Ceres::Homepage.DefaultHomepage.twig' %}
-            {% endblock %}
-        {% endif %}
-
-    {% endif %}
+            
+            
+            </div>
 
     
 
