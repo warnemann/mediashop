@@ -56,6 +56,13 @@ class mediashopServiceProvider extends ServiceProvider
                                          $container->setNewComponentTemplate('mediashop::Item.Components.SingleItem');
                                          }
 
+                                      if ($container->getOriginComponentTemplate()=='Ceres::Item.SingleItemWrapper')
+                                         {
+                                         $container->setNewComponentTemplate('mediashop::Item.mediashopSingleItemWrapper');
+                                         }
+
+                                     
+                                     
                                               if ($container->getOriginComponentTemplate()=='Ceres::Checkout.Components.AcceptGtcCheck')
                                          {
                                          $container->setNewComponentTemplate('mediashop::Checkout.Components.AcceptGtcCheck');
