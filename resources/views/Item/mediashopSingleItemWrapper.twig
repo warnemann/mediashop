@@ -7,7 +7,7 @@
     <meta name="keywords" content="{{ item.documents[0].data.texts.keywords }}">
 
     <meta property="og:title" content="{{ ItemName.get(item.documents[0].data | itemName, item.documents[0].data.variation.bundleType) }}" />
-    <meta property="og:type" content="artic" />
+    <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ webstoreConfig.domainSsl }}{{ item.documents[0].data | itemURL }}" />
     <meta property="og:image" content="{{  item.documents[0].data.images.all[0].url }}" />
     <meta property="og:description" content="{{ item.documents[0].data.texts.shortDescription }}" />

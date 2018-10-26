@@ -8,8 +8,7 @@
 
 {% block PartialHead %}
     <meta name="description" content="{{ trans('Ceres::Template.homepageMetaDescription') }}">
-    <meta name="robots" content="{{ config("Ceres.meta.robots_home") }}">
-
+    <meta name="robots" content="{% if forceNoIndex %}NOINDEX{% else %}{{ config("Ceres.meta.robots_home") }}{% endif %}">
     <meta property="og:title" content="{{ companyName }}"/>
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="{{ services.webstoreConfig.getWebstoreConfig().domainSsl }}"/>
@@ -19,17 +18,13 @@
     <script type="application/ld+json">
         {"@context": "http://schema.org","@type": "WebSite","url": "{{ services.webstoreConfig.getWebstoreConfig().domainSsl }}","potentialAction":{"@type": "SearchAction","target": "{{ services.webstoreConfig.getWebstoreConfig().domainSsl }}/search?query={search_term}","query-input": "required name=search_term"}}
     </script>
-<!-- PayPal BEGIN -->
-  <script>
-      ;(function(a,t,o,m,s){a[m]=a[m]||[];a[m].push({t:new Date().getTime(),event:'snippetRun'});var f=t.getElementsByTagName(o)[0],e=t.createElement(o),d=m!=='paypalDDL'?'&m='+m:'';e.async=!0;e.src='https://www.paypal.com/tagmanager/pptm.js?id='+s+d;f.parentNode.insertBefore(e,f);})(window,document,'script','paypalDDL','f10d2d46-3c15-488b-b6b8-494b8d49c70d');
-    </script>
-  <!-- PayPal END -->
-
 <title>{{ companyName }}</title>
 
 {% endblock %}
 
 {% block PageBody %}
+
+    {% if ceresConfig.homepage.showShopBuilderContent or request.get('isContentBuilder') == 1 %}
 
 <div class="home container-max">
     <div class="row">
@@ -116,5 +111,19 @@
             </div>
         </div>
     </div>
+
+    {% else %}
+
+        {% if showDefaultHomepage == "true" %}
+            {% include 'Ceres::Homepage.MarketingHomepage.twig' %}
+        {% else %}
+            {% block ThemeHomepage %}
+                {% include 'Ceres::Homepage.DefaultHomepage.twig' %}
+            {% endblock %}
+        {% endif %}
+
+    {% endif %}
+
+
 
 {% endblock %}
