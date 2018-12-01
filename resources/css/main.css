@@ -89,6 +89,10 @@ small, .small, .btn-labeled, .basket-preview .totals {
     min-height: 24px;
     }
 
+.variation-input-button {
+    display: none;
+}
+
 /* font-family: 'Playfair Display', sans-serif; */
 /* font-family: 'Open Sans', sans-serif; */
 /* font-family: 'Raleway', sans-serif; */

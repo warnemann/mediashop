@@ -5,7 +5,7 @@
 <span class="variation-headline">${ attribute.name } wählen</span>
 <div class="row variation-buttons">
 <div v-for="(attributeValue, attributeValueId) in attribute.values" class="variation-button-context">
-<input type="button" class="variation-input-button"
+<input type="radio" class="variation-input-button"
 :id="attributeValueId"
 :value="attributeValueId"
 :name="attribute.name"
