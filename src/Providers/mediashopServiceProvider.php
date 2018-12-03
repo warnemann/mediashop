@@ -56,12 +56,12 @@ class mediashopServiceProvider extends ServiceProvider
                                          $container->setNewComponentTemplate('mediashop::Item.Components.SingleItem');
                                          }
 
-/**                                  if ($container->getOriginComponentTemplate()=='Ceres::Item.Components.VariationSelect')
+                                  if ($container->getOriginComponentTemplate()=='Ceres::Item.Components.VariationSelect')
                                          {
                                          $container->setNewComponentTemplate('mediashop::Item.Components.VariationSelect');
                                          }
-*/
-                                      if ($container->getOriginComponentTemplate()=='Ceres::Item.SingleItemWrapper')
+
+                                     if ($container->getOriginComponentTemplate()=='Ceres::Item.SingleItemWrapper')
                                          {
                                          $container->setNewComponentTemplate('mediashop::Item.mediashopSingleItemWrapper');
                                          }
