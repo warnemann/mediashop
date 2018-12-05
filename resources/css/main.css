@@ -89,6 +89,10 @@ small, .small, .btn-labeled, .basket-preview .totals {
     min-height: 24px;
     }
 
+.variation-button-context {
+    margin-right: .4rem;
+}
+
 .row.variation-buttons {
     width: 90%;
     display: flex;
@@ -103,4 +107,16 @@ small, .small, .btn-labeled, .basket-preview .totals {
 /* font-family: 'Playfair Display', sans-serif; */
 /* font-family: 'Open Sans', sans-serif; */
 /* font-family: 'Raleway', sans-serif; */
+
+.variation-input-button:checked ~ label.btn {
+    color: #fff;
+    background-color: #30b3ad;
+    border-color: #30b3ad;
+}
+
+.btn-primary {
+    background-color: #fff;
+    border-color: ##30b3ad;
+    color: #30b3ad;
+}
 
