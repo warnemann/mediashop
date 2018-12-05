@@ -89,10 +89,17 @@ small, .small, .btn-labeled, .basket-preview .totals {
     min-height: 24px;
     }
 
-/*.variation-input-button {
-    display: none;
-}*/
+.row.variation-buttons {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: .1rem;
+    margin-top: .4rem;
+}
 
+.variation-input-button {
+    display: none;
+}
 /* font-family: 'Playfair Display', sans-serif; */
 /* font-family: 'Open Sans', sans-serif; */
 /* font-family: 'Raleway', sans-serif; */
