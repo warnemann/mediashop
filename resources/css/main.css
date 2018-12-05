@@ -120,3 +120,6 @@ small, .small, .btn-labeled, .basket-preview .totals {
     color: #30b3ad;
 }
 
+.variation-headline {
+    font-weight: bold;
+}
