@@ -67,6 +67,14 @@
     {% endif %}
 </style>
 
+{% set scriptId = uid() %}
+<script id="">
+    document.getElementById("vue-app").style.marginTop = document.getElementById("page-header").getBoundingClientRect().height + 'px';
+    document.getElementById("").remove();
+</script>
+
+{% include "Ceres::Category.Item.Partials.Pagination" with { 'currentPage': page } %}
+
 {% import "Ceres::PageDesign.Macros.LayoutContainer" as LayoutContainer %}
 
 {% set logData = config("Ceres.log.data")|split(', ') %}
